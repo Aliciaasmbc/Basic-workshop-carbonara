@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbonara pasta 🍝</title>
+    <style>
+      body {
+        background: linear-gradient(to top, #f5efe1 0%, #f7debd 100%);
+      }
+      h1 {
+        text-align: center;
+        color: #3c1b1f;
+      }
+      h2 {
+        display: block;
+        text-align: center;
+        color: #b21e4b;
+        width: 650px;
+        border: 1px solid #b21e4b;
+        padding: 15px;
+        font-size: 22px;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        border-radius: 10px;
+      }
+      p {
+        color: #3c1b1f;
+        line-height: 1.5;
+        font-size: 12;
+        padding: 20px;
+        text-align: justify;
+      }
+      button {
+        display: block;
+        margin: 30px auto;
+        background-color: #6e5773;
+        color: #f7f0e0;
+        font-size: 20px;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      .learn-more {
+        display: block;
+        color: #ea9085;
+        font-weight: bolder;
+        margin-top: 20px;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        font-family: monospace;
+        text-align: center;
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        👩‍🍳 <em>Today's</em>
+        Pasta recipe 👩‍🍳
+      </h1>
+      <h2>
+        <strong>Carbonara Pasta 🍝</strong>
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/075/832/original/1400x919-SpaghettiCarbonara-557b6ff5-c4f3-4565-ae8e-a506f7dcc415-0-1400x919.jpg?1680962349"
+        alt="plate of carbonara pasta"
+        width="1500"
+      />
+      <p>
+        Carbonara is a Roman pasta dish made with eggs, hard cheese, cured pork
+        and black pepper. The dish took its modern form and name in the middle
+        of the 20th century. The cheese is usually Pecorino Romano,
+        Parmigiano-Reggiano, or a combination of the two. Spaghetti is the most
+        common pasta, but fettuccine, rigatoni, linguine, or bucatini are also
+        used. Normally guanciale or pancetta are used for the meat component,
+        but lardons of smoked bacon are a common substitute outside Italy.
+      </p>
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Carbonara"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <button class="button">🛵 Order Carbonara Pasta</button>
+      <hr />
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/alicia-apreala-8a26a552/"
+          target="_blank"
+        >
+          Alicia Apreala
+        </a>
+      </p>
+    </div>
+    <script>
+      function orderHere() {
+        let age = prompt("how old are you ?");
+        if (age < 18) {
+          alert("Please ask an adult to order for you");
+        } else {
+          alert("Thank you, now we need a bit more information abou you.");
+        }
+        let name = prompt("What's your name?");
+        let address = prompt("What's your address?");
+        let email = prompt("What's your email?");
+        alert(
+          "Thank you " +
+            name +
+            "! We will let you know via email when your order is with the kitchen."
+        );
+      }
+      let Button = document.querySelector(".button");
+      Button.addEventListener("click", orderHere);
+    </script>
+  </body>
+</html>
